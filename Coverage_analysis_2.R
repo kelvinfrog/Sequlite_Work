@@ -20,7 +20,6 @@ num.col = 4
 theme.font = 16
 angle = 90
 
-experiment  = c()
 experiment  = c("67x_Inc")
 file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
 exp = c()
