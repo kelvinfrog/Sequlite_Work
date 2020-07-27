@@ -18,7 +18,7 @@ library(data.table)
 # Input -------------------------------------------------------------------
 
 #experiment number, only the number with NO CRT
-experiment  = c("106x_Inc", "106x_CL", "107x_Inc", "107x_CL", "108x_Inc", "36y_CL", "36y_Inc")
+experiment  = c("106x_Inc")
 
 file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
 file_path2 = 'C:/Users/kelvin/Documents/Figures/'
@@ -276,7 +276,6 @@ for (f in c(1 : length(relative_list))){
   g <- ggplot_gtable(ggplot_build(P1))
   stript <- which(grepl('strip-t', g$layout$name))
   
-  n = length(unique(db5$base))
   fills <- c( rep("#4363d8", 1), rep("#f032e6", 1), rep("#3cb44b", 1), rep("#f58231", 1)) 
   
   k <- 1
