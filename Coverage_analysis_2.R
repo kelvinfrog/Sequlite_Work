@@ -20,7 +20,13 @@ num.col = 4
 theme.font = 16
 angle = 90
 
-experiment  = c("34y_Inc", "35y_Inc", "35y_CL")
+experiment  = c()
+file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
+exp = c()
+for (e in experiment) {
+  x = list.files(path =  paste0(file_path1), pattern = e, full.names = TRUE, recursive = F)
+  exp = c(exp, x)
+}
 
 experiment = experiment[str_detect(experiment, "Inc")]
 
