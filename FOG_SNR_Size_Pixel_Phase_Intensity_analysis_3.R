@@ -21,6 +21,8 @@ library(data.table)
 experiment  = c("106x_Inc", "106x_CL", "107x_Inc", "107x_CL", "108x_Inc", "36y_CL", "36y_Inc")
 
 file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
+file_path2 = 'C:/Users/kelvin/Documents/Figures/'
+
 exp = c()
 for (e in experiment) {
   x = list.files(path =  paste0(file_path1), pattern = e, full.names = TRUE, recursive = F)
@@ -54,8 +56,6 @@ numrow = function(df){
 # SNR analysis ------------------------------------------------------------
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 SNR_path = '_fbqc_SNRMean.tsv'
 
 
@@ -160,8 +160,6 @@ for (i in c(1 :length(file_name_list))){
 # RFL vs Noise analysis ---------------------------------------------------
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 relative_path = '_fbqc_RelativeIntensityMean.tsv'
 noise_path = '_fbqc_NoiseMean.tsv'
 
@@ -303,8 +301,6 @@ for (f in c(1 : length(relative_list))){
 # FOG Analysis ------------------------------------------------------------
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 FOG_path = '_fbqc_Fractionofgoodfeatures.tsv'
 
 
@@ -410,8 +406,6 @@ for (i in c(1 :length(file_name_list))){
 
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 pixel_path = '_pixel_percentile_group.tsv'
 
 
@@ -663,8 +657,6 @@ for (i in c(1:length(file_name_list))){
 
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 Size_path = '_fbqc_SizeMean.tsv'
 Std_path = '_fbqc_SizeStd.tsv'
 
@@ -857,14 +849,11 @@ for (i in c(1 :length(file_name_list))){
 
 x.font = 13
 y.font = 13
-num.row = 3
 theme.font = 13
 mx.font = 13
 
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
-file_path2 = 'C:/Users/kelvin/Documents/Figures/'
 relative_path = '_fbqc_RelativeIntensityMean.tsv'
 background_path = '_fbqc_BackgroundMean.tsv'
 
@@ -1084,7 +1073,6 @@ experiment = experiment[str_detect(experiment, "Inc")]
 
 
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
 base_path = '_phase_base.tsv'
 cycle_path = '_phase_cycle.tsv'
 cross2_path = '_phase_and_crosstalk_2_cycle.tsv'
@@ -1503,7 +1491,6 @@ for (f in c(1:length(cross2_list))){
 
 #Phase_percent
 #file path for the tsv file and create path for the tsv file
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
 
 cross_list = c()
 for (e in experiment) {
@@ -1620,7 +1607,6 @@ for (f in c(1:length(phase.percent.list))){
 
 # Summary report ----------------------------------------------------------
 
-file_path1 = 'C:/Users/kelvin/Documents/Bioinformatics_analysis/'
 
 summary_list = c()
 for (e in experiment) {
